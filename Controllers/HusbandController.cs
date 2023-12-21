@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using patrickLearn.CustomActionFilters;
 using patrickLearn.DTOs.Husband;
@@ -10,6 +11,7 @@ using patrickLearn.Service;
 
 namespace patrickLearn.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class HusbandController : ControllerBase

@@ -15,6 +15,8 @@ namespace patrickLearn.Models
         // property
         public ICollection<Wife> wives { get; } = new List<Wife>(); // Collection navigation containing dependents
         public ICollection<Chilldren> chilldrens { get; } = new List<Chilldren>(); // Collection navigation containing dependents
+        // We have a husband and want to select the corresponding user
+        public User? User { get; set; }
 
     }
 }

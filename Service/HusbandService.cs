@@ -57,7 +57,7 @@ namespace patrickLearn.Service
             {
                 serviceResponse.Data = serviceResponse.Data
                     .Where(x => x.Name.Contains(filterQuery, StringComparison.OrdinalIgnoreCase))
-                    .ToList();
+                     .ToList();
             }
             else
             {

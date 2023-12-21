@@ -13,5 +13,7 @@ namespace patrickLearn.Data
         :base(options){ }
 
         public DbSet<Husband> husbands { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Image> Images { get; set; }
     }
 }
